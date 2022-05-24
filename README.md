@@ -28,3 +28,11 @@ Some properties can be changed using css custom properties on pulsing-container:
 --font-size: 6rem;
 --pulse-duration: 3s;
 ```
+
+Example:
+
+```html
+<div class="pulsing-container" style="--background-hue: 130; --font-size: 54px; --icon-size: 54px; --pulse-duration: 1s">
+	<div class="pulsing-icon">&#9763;</div>
+</div>
+```
