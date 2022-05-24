@@ -1,0 +1,65 @@
+/* Only for testing */
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .pulsing-container {
+	--background-hue: 230;
+	--icon-size: 8rem;
+	--font-size: 8rem;
+	--pulse-duration: 3s;
+} */
+
+.pulsing-icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: var(--icon-size, 6rem);
+	width: var(--icon-size, 6rem);
+	font-size: var(--font-size, 6rem);
+	background-color: hsla(var(--background-hue, 230), 60%, 60%, 0.9);
+	line-height: 1;
+	border-radius: 50%;
+}
+
+.pulsing-container::before,
+.pulsing-icon::before,
+.pulsing-icon::after {
+	content: "";
+	position: absolute;
+	background-color: hsla(var(--background-hue, 230), 60%, 60%, 0.6);
+	width: var(--icon-size, 6rem);
+	height: var(--icon-size, 6rem);
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.pulsing-container::before {
+	animation: pulsing var(--pulse-duration, 3s) ease-in infinite;
+}
+.pulsing-icon::before {
+	animation: pulsing var(--pulse-duration, 3s) ease-in calc(var(--pulse-duration, 3s) / 3) infinite;
+}
+.pulsing-icon::after {
+	animation: pulsing var(--pulse-duration, 3s) ease-in calc(var(--pulse-duration, 3s) * 2 / 3) infinite;
+}
+
+@keyframes pulsing {
+	0% {
+		transform: scale(1);
+		background-color: hsla(var(--background-hue, 230), 60%, 60%, 0.6);
+	}
+	90% {
+		background-color: hsla(var(--background-hue, 230), 60%, 60%, 0.1);
+	}
+	100% {
+		transform: scale(2);
+		background-color: hsla(var(--background-hue, 230), 60%, 60%, 0);
+	}
+}
