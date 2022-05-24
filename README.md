@@ -6,10 +6,10 @@ Simple pulsing animation using CSS custom properties.
 
 ## Usage:
 
-Link css:
+Download and link css https://github.com/ricko1995/pulsing-animation-css/blob/master/pulsing-anim-stylesheet.css :
 
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/ricko1995/pulsing-animation-css/master/style.css" />
+<link rel="stylesheet" href="pulsing-anim-stylesheet.css" />
 ```
 
 Create pulsing-container with pulsing-icon:
