@@ -26,13 +26,14 @@ Some properties can be changed using css custom properties on pulsing-container:
 --background-hue: 230;
 --icon-size: 6rem;
 --font-size: 6rem;
+--font-color: black;
 --pulse-duration: 3s;
 ```
 
 Example:
 
 ```html
-<div class="pulsing-container" style="--background-hue: 130; --font-size: 54px; --icon-size: 54px; --pulse-duration: 1s">
+<div class="pulsing-container" style="--background-hue: 130; --font-size: 54px; --font-color: white; --icon-size: 54px; --pulse-duration: 1s">
 	<div class="pulsing-icon">&#9763;</div>
 </div>
 ```
