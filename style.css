@@ -1,18 +1,11 @@
 /* Only for testing */
-body {
+/* body {
 	margin: 0;
 	height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-}
-
-/* .pulsing-container {
-	--background-hue: 230;
-	--icon-size: 8rem;
-	--font-size: 8rem;
-	--pulse-duration: 3s;
+	align-items: center; 
 } */
 
 .pulsing-icon {

@@ -2,15 +2,25 @@
 
 Simple pulsing animation using CSS custom properties.
 
-![Preview gif]()
+![Preview gif](https://github.com/ricko1995/pulsing-animation-css/blob/master/preview.gif?raw=true)
 
 ## Usage:
 
-Link css
+Link css:
 
 ```html
-
+<link rel="stylesheet" href="https://raw.githubusercontent.com/ricko1995/pulsing-animation-css/master/style.css" />
 ```
+
+Create pulsing-container with pulsing-icon:
+
+```html
+<div class="pulsing-container">
+	<div class="pulsing-icon">&#9763;</div>
+</div>
+```
+
+Some properties can be changed using css custom properties on pulsing-container:
 
 ```css
 --background-hue: 230;
